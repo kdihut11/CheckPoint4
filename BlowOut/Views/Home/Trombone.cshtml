@@ -7,11 +7,12 @@
 <h2>Trombone</h2>
 <img class="viewpic" src="~/Content/Images/trombone.jpg" />
 
-<button class="myButton" id="new" onclick="NewPrice()">New</button>
+<button class="myButton" id="new" onmouseover="NewPrice()">New</button>
 
-<button class="myButton" id="used" onclick="UsedPrice()">Used</button>
+<button class="myButton" id="used" onmouseover="UsedPrice()" onclick="location.href='@Url.Action("Index", "Home")'">Used</button>
 
 <p class="price" id="price"></p>
+
 
 
 <script>

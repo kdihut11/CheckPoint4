@@ -74,6 +74,7 @@ namespace BlowOut.Controllers
             ViewBag.NewPrice = 42;
             ViewBag.UsedPrice = 30;
             return View();
+            
         }
     }
 }
