@@ -191,6 +191,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="DAL\" />
     <Folder Include="Views\Clarinet\" />
     <Folder Include="Views\Flute\" />
     <Folder Include="Views\Rental\" />
