@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Clarinet";
+}
+<link href="~/Content/Styles.css" rel="stylesheet" />
+<h2>Clarinet</h2>
+<img class="viewpic" src="~/Content/Images/clarinet.jpg" />
+
+<button class="myButton" id="new" onclick="NewPrice()">New</button>
+
+<button class="myButton" id="used" onclick="UsedPrice()">Used</button>
+
+<p class="price" id="price"></p>
+
+
+<script>
+
+    function NewPrice()
+    {
+        document.getElementById("price").innerHTML = "$" + '@Html.Raw(ViewBag.NewPrice)';
+    }
+
+      function UsedPrice()
+    {
+        document.getElementById("price").innerHTML = "$" + '@Html.Raw(ViewBag.UsedPrice)';
+    }
+
+</script>

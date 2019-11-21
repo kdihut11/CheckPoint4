@@ -1,0 +1,166 @@
+﻿body {
+    background-color: black;
+    color: white;
+}
+
+.myFooterText
+{
+    font-family: Verdana;
+}
+
+.rentalstitle {
+    position: absolute;
+    width: 588px;
+    height: 108px;
+    left: 350px;
+    top: 128px;
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 78px;
+    text-align: center;
+    color: white;
+}
+
+.myButton {
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color: #d0451b;
+    border-radius: 3px;
+    border: 1px solid #942911;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
+}
+
+    .myButton:hover {
+        background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+        background-color: #bc3315;
+    }
+
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
+
+.picture1 {
+    position: absolute;
+    width: 197px;
+    height: 191px;
+    left: 320px;
+    top: 236px;
+}
+
+.text1 {
+    position: absolute;
+    width: 216px;
+    height: 60px;
+    left: 311px;
+    top: 460px;
+    color: white;
+}
+
+.picture2 {
+    position: absolute;
+    width: 198px;
+    height: 191px;
+    left: 547px;
+    top: 236px;
+}
+
+.text2 {
+    position: absolute;
+    width: 216px;
+    height: 60px;
+    left: 538px;
+    top: 460px;
+    color: white;
+}
+
+.picture3 {
+    position: absolute;
+    width: 197px;
+    height: 191px;
+    left: 775px;
+    top: 236px;
+}
+
+.text3 {
+    position: absolute;
+    width: 216px;
+    height: 60px;
+    left: 765px;
+    top: 460px;
+    color: white;
+}
+
+.picture4 {
+    position: absolute;
+    width: 198px;
+    height: 191px;
+    left: 317px;
+    top: 553px;
+}
+
+.text4 {
+    position: absolute;
+    width: 216px;
+    height: 60px;
+    left: 308px;
+    top: 777px;
+    color: white;
+}
+
+.picture5 {
+    position: absolute;
+    width: 197px;
+    height: 191px;
+    left: 545px;
+    top: 553px;
+}
+
+.text5 {
+    position: absolute;
+    width: 216px;
+    height: 60px;
+    left: 536px;
+    top: 777px;
+    color: white;
+}
+
+.picture6 {
+    position: absolute;
+    width: 197px;
+    height: 191px;
+    left: 772px;
+    top: 553px
+}
+
+.text6 {
+    position: absolute;
+    width: 203px;
+    height: 60px;
+    left: 769px;
+    top: 777px;
+    color: white;
+}
+
+.viewpic
+{
+    width: 400px;
+}
+
+.price {
+    position: absolute;
+    left: 490px;
+    top: 200px;
+    font-size: 50px;
+    color: white;
+
+}
