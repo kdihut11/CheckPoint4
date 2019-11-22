@@ -1,0 +1,46 @@
+﻿
+
+@{
+    ViewBag.Title = "Rentals";
+}
+
+<link href="~/Content/Styles.css" rel="stylesheet" />
+<h2 class="rentalstitle ">RENTALS</h2>
+<div>
+    <div>
+        <a href="@Url.Action("NewRental", new { InstrumentName = "Trumpet" })">
+            <img class="picture1" src="~/Content/Images/trumpet.jpg" />
+        </a>
+        <p class="text1">Trumpets</p>
+    </div>
+    <div>
+        <a href="@Url.Action("NewRental", new { InstrumentName = "Trombone" })">
+            <img class="picture2" src="~/Content/Images/trombone.jpg" />
+        </a>
+        <p class="text2">Trombones</p>
+    </div>
+    <div>
+        <a href="@Url.Action("NewRental", new { InstrumentName = "Trumpet" })">
+            <img class="picture3" src="~/Content/Images/tuba.jpg" />
+        </a>
+        <p class="text3">Tubas</p>
+    </div>
+    <div>
+        <a href="@Url.Action("NewRental", new { InstrumentName = "Trumpet" })">
+            <img class="picture4" src="~/Content/Images/flute.jpg" />
+        </a>
+        <p class="text4">Flutes</p>
+    </div>
+    <div>
+        <a href="@Url.Action("NewRental", new { InstrumentName = "Trumpet" })">
+            <img class="picture5" src="~/Content/Images/clarinet.jpg" />
+        </a>
+        <p class="text5">Clarinets</p>
+    </div>
+    <div>
+        <a href="@Url.Action("NewRental", new { InstrumentName = "Trumpet" })">
+            <img class="picture6" src="~/Content/Images/saxophone.jpg" />
+        </a>
+        <p class="text6">Saxophones</p>
+    </div>
+</div>

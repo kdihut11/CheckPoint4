@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Saxophone";
+}
+<link href="~/Content/Styles.css" rel="stylesheet" />
+<h2>@Html.Raw(ViewBag.InstrumentName)</h2>
+<img class="viewpic" src="~/Content/Images/@(ViewBag.InstrumentName).jpg" />
+<select id="NewUsed" onchange="Price(this.value)">
+    <option value=""></option>
+    <option value="New">New</option>
+    <option value="Used">Used</option>
+</select>
+<p class="price" id="price"></p>
+
+
+<script>
+
+    function Price(NewOrUsed)
+    {
+        if (NewOrUsed == "New") {
+            document.getElementById("price").innerHTML = "$" + '@Html.Raw(ViewBag.NewPrice)';
+        }
+        else if (NewOrUsed == "Used") {
+            document.getElementById("price").innerHTML = "$" + '@Html.Raw(ViewBag.UsedPrice)';
+        }
+        else {
+            document.getElementById("price").innerHTML = "";
+        }
+        console.log(NewOrUsed);
+    }
+
+</script>

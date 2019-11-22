@@ -28,52 +28,5 @@ namespace BlowOut.Controllers
 
             return View();
         }
-
-        public ActionResult Rentals()
-        {
-            return View();
-        }
-
-        public ActionResult Trumpet()
-        {
-            ViewBag.NewPrice = 55;
-            ViewBag.UsedPrice = 25;
-            return View();
-        }
-
-        public ActionResult Trombone()
-        {
-            ViewBag.NewPrice = 60;
-            ViewBag.UsedPrice = 35;
-            return View();
-        }
-
-        public ActionResult Tuba()
-        {
-            ViewBag.NewPrice = 70;
-            ViewBag.UsedPrice = 50;
-            return View();
-        }
-
-        public ActionResult Flute()
-        {
-            ViewBag.NewPrice = 40;
-            ViewBag.UsedPrice = 25;
-            return View();
-        }
-
-        public ActionResult Clarinet()
-        {
-            ViewBag.NewPrice = 35;
-            ViewBag.UsedPrice = 27;
-            return View();
-        }
-
-        public ActionResult Saxophone()
-        {
-            ViewBag.NewPrice = 42;
-            ViewBag.UsedPrice = 30;
-            return View();
-        }
     }
 }

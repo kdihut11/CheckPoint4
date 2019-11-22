@@ -1,0 +1,44 @@
+﻿@model List<BlowOut.Models.InstrumentType>
+
+@{
+    ViewBag.Title = "ListRentals";
+}
+
+<h2>ListRentals</h2>
+
+<table class="table">
+    @for(int i = 0; i < this.Model.Count(); i += 3)
+ //       (var item in Model)
+    {
+    <tr>
+        <td>
+            <a href="@Url.Action("NewRental", new { InstrumentName = this.Model[i].Name })">
+                <img height="20" width="19" src="~/Content/Images/@(this.Model[i].Picture).jpg" />
+            </a>
+            <br />
+            <p>@(this.Model[i].Name)</p>
+        </td>
+        @if (i + 1 < this.Model.Count())
+        {
+            <td>
+                <a href="@Url.Action("NewRental", new { InstrumentName = this.Model[i+1].Name })">
+                    <img height="20" width="19" src="~/Content/Images/@(this.Model[i+1].Picture).jpg" />
+                </a>
+                <br />
+                <p>@(this.Model[i+1].Name)</p>
+            </td>
+        }
+        @if (i + 2 < this.Model.Count())
+        {
+            <td>
+                <a href="@Url.Action("NewRental", new { InstrumentName = this.Model[i+2].Name })">
+                    <img height="20" width="19" src="~/Content/Images/@(this.Model[i+2].Picture).jpg" />
+                </a>
+                <br />
+                <p>@(this.Model[i+2].Name)</p>
+            </td>
+        }
+    </tr>
+    }
+
+</table>
