@@ -17,6 +17,7 @@ namespace BlowOut.Models
             new InstrumentType{Name = "Saxophone", NewPrice = 42, UsedPrice = 30, Picture = "saxophone"}
         };
 
+        public int InstrumentTypeID
         public string Name { get; set; }
         public int NewPrice { get; set; }
         public int UsedPrice { get; set; }

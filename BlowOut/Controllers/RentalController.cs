@@ -22,9 +22,9 @@ namespace BlowOut.Controllers
         public ActionResult NewRental(string InstrumentName)
         {
             ViewBag.InstrumentName = InstrumentName;
-            ViewBag.InstrumentImage = Instruments.InstrumentPictures[InstrumentName];
-            ViewBag.NewPrice = Instruments.NewPrices[InstrumentName];
-            ViewBag.UsedPrice = Instruments.UsedPrices[InstrumentName];
+            ViewBag.InstrumentImage = Instrument.InstrumentPictures[InstrumentName];
+            ViewBag.NewPrice = Instrument.NewPrices[InstrumentName];
+            ViewBag.UsedPrice = Instrument.UsedPrices[InstrumentName];
             return View();
         }
     }
