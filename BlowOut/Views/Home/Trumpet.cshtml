@@ -9,10 +9,9 @@
 <img class="viewpic" src="~/Content/Images/trumpet.jpg" />
 
 
-<button class="myButton" id="new" onclick="NewPrice()">New</button>
+<button class="myButton" id="new" onmouseover="NewPrice()" onclick="location.href='@Url.Action("AddClient", "Client")'">New</button>
 
-<button class="myButton" id="used" onclick="UsedPrice()">Used</button>
-
+<button class="myButton" id="used" onmouseover="UsedPrice()" onclick="location.href='@Url.Action("AddClient", "Client")'">Used</button>
 <p class="price" id="price"></p>
 
 

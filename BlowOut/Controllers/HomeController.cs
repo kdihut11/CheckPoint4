@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BlowOut.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,7 @@ namespace BlowOut.Controllers
 {
     public class HomeController : Controller
     {
+        public static ClientRental clientRental = new ClientRental();
         public ActionResult Index()
         {
             return View();
@@ -36,6 +38,7 @@ namespace BlowOut.Controllers
 
         public ActionResult Trumpet()
         {
+            clientRental.InstrumentType = "Trumpet";
             ViewBag.NewPrice = 55;
             ViewBag.UsedPrice = 25;
             return View();
@@ -43,6 +46,7 @@ namespace BlowOut.Controllers
 
         public ActionResult Trombone()
         {
+            clientRental.InstrumentType = "Trombone";
             ViewBag.NewPrice = 60;
             ViewBag.UsedPrice = 35;
             return View();
@@ -50,6 +54,7 @@ namespace BlowOut.Controllers
 
         public ActionResult Tuba()
         {
+            clientRental.InstrumentType = "Tuba";
             ViewBag.NewPrice = 70;
             ViewBag.UsedPrice = 50;
             return View();
@@ -57,6 +62,7 @@ namespace BlowOut.Controllers
 
         public ActionResult Flute()
         {
+            clientRental.InstrumentType = "Flute";
             ViewBag.NewPrice = 40;
             ViewBag.UsedPrice = 25;
             return View();
@@ -64,6 +70,7 @@ namespace BlowOut.Controllers
 
         public ActionResult Clarinet()
         {
+            clientRental.InstrumentType = "Clarinet";
             ViewBag.NewPrice = 35;
             ViewBag.UsedPrice = 27;
             return View();
@@ -71,10 +78,12 @@ namespace BlowOut.Controllers
 
         public ActionResult Saxophone()
         {
+            clientRental.InstrumentType = "Saxaphone";
             ViewBag.NewPrice = 42;
             ViewBag.UsedPrice = 30;
             return View();
             
         }
+
     }
 }
