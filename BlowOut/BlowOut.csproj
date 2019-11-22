@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\EmailSetupController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -127,6 +128,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\ClientRental.cs" />
     <Compile Include="Models\Gmail.cs" />
     <Compile Include="Models\Instruments.cs" />
     <Compile Include="Models\Rental.cs" />
@@ -188,6 +190,7 @@
     <Content Include="Views\Home\Clarinet.cshtml" />
     <Content Include="Views\Home\Saxophone.cshtml" />
     <Content Include="Views\EmailSetup\Index.cshtml" />
+    <Content Include="Views\Client\AddClient.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
